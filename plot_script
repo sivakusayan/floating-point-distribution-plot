@@ -1,0 +1,13 @@
+set title "Enumeration of Floating Point Numbers using nextafterf()" font ",18" offset 0,1
+set xlabel "Index during iteration (negative values represent iteration towards -FLT\\\_MAX)" font ",11" offset 0,-2
+set ylabel "Approximate value of nextafterf() at index" offset -4,0 font ",11"
+unset key
+set xtics axis
+set ytics axis
+set zeroaxis
+set margin 12,12,5,5
+unset border
+set xtics -1e8,2e7,1e8
+
+plot "data.txt" lc 2
+pause -1 "Hit any key to continue"
